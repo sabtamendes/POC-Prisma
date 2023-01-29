@@ -11,5 +11,5 @@ model list {
   id        Int      @id @default(autoincrement())
   task      String
   notes     String
-  createdAt DateTime @db.Date
+  createdAt DateTime     @default(now())
 }

@@ -5,9 +5,8 @@ async function main() {
   await prisma.list.create({
     data: 
       {
-        task: "Lavar Louça",
-        notes: "bem lavada",
-        createdAt: new Date()
+        task: "Terminar o projeto",
+        notes: "À tempo"
       }
   })
 

@@ -4,5 +4,12 @@ CREATE TABLE list(
     id SERIAL PRIMARY KEY,
     task TEXT NOT NULL,
     notes TEXT NOT NULL,
-    "createdAt" DATE NOT NULL DEFAULT
+    user_id REFERENCES "username"(id),
+    "createdAt" DATE NOT NULL
 );
+
+CREATE TABLE username(
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL
+);
+
