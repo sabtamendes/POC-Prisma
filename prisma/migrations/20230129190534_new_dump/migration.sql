@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "list" ALTER COLUMN "createdAt" DROP NOT NULL,
+ALTER COLUMN "createdAt" SET DATA TYPE DATE;
