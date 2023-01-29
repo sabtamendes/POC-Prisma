@@ -5,7 +5,7 @@ const task = Router();
 
 task
 .post("/task", postNewTask)
-.get("/task", getTasksById)
+.get("/task/:taskId", getTasksById)
 .get("/task",getAllTasks);
 
 export default task;
